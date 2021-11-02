@@ -13,10 +13,10 @@ public class Test3 {
         given().
                 baseUri("https://jsonplaceholder.typicode.com")
         .when()
-                .get("/posts?userId=1&title=sunt aut facere repellat provident occaecati excepturi optio reprehenderit")
+                .get("/posts?userId=1&title=qui est esse")
         .then()
                 .statusCode(200)
-                .body("userId[0]", equalTo(1), "title",hasItem("sunt aut facere repellat provident occaecati excepturi optio reprehenderit"));
+                .body("userId[0]", equalTo(1), "title",hasItem("qui est esse"));
 
 
     }
